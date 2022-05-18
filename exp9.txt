@@ -1,0 +1,35 @@
+Index.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Hii Rashmi </h1>
+       <form action="index.jsp">
+           <label>Name</label>
+           <input type="text" name="um"/>
+           <button type="submit">Submit</button>
+       </form>
+</body>
+</html>
+
+
+
+Index.jsp
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+      <%
+      String n = request.getParameter("um");
+      out.println("Number Entered is: " + n);
+      %>
+</body>
+</html
